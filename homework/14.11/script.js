@@ -14,4 +14,3 @@ do {
   } 
 } while(attemps < 5 )
 
-л
