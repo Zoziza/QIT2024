@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>Блог Жазбалары</h1>
+    <div class="input-group">
+        <label for="searchInput">Блог атауын іздеу</label>
+        <input type="text" id="searchInput" placeholder="Блог атауын іздеу:">
+        <button id="searchBtn" class="button">Іздеу</button> 
+    </div>
+
+    <div class="input-group">
+        <label for="titleInput">Тақырып</label>
+        <input type="text" id="titleInput" placeholder="Тақырыпты еңгізініз">
+    </div>
+
+    <div class="input-group">
+        <label for="contentInput">Мазмұн</label>
+        <textarea id="contentInput" rows="4" placeholder="Мазмұнды жазыңыз"></textarea>
+    </div>
+    <button id="addPostBtn" class="button">Жазба қосу</button>
+    <div id="blogPosts" class="blog-posts">
+        
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
