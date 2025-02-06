@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(192, 192, 192);
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header .header-content {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+}
+
+.weather form {
+    display: flex;
+    gap: 10px; 
+}
+
+.weather input, .weather button {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+
+.weather button {
+    background-color: #000000; 
+    color: white; 
+    transition: background-color 0.3s;
+}
+
+.weather button:hover {
+    background-color: #5d94eb; 
+}
+
+
+  
+
+.main-container {
+    margin-left:200px;
+    margin-right:200px;
+    margin-top: 50px;
+
+}
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+  margin-bottom: 20px;
+
+
+}
+
+.weather-details {
+    display: flex; 
+    align-items: flex-start; 
+    margin-top: 80px;
+    gap: 80px;
+    color: rgb(255, 255, 255);
+}
+
+.weather-icon {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px; 
+}
+
+.weather-details h2, 
+.weather-details p {
+    margin: 0; 
+}
+
+#weatherSection {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+}
+
+
+.forecast {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+
+.forecast-item:hover {
+    transform: scale(1.05); 
+}
+
+
+.forecast-day {
+    font-size:  20px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.forecast-temp {
+    font-size:30px;
+    color: #333;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #fcfcfc;
+}
+
+
+.moon-phases {
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+   
+}
+.moon-phases a{
+    color: #fcfcfc;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+  
+  
+}
+
+
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 20px; 
+
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 120px; 
+    transition: transform 0.3s ease;
+}
+.forecast-item-moon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    width: 120px; 
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.forecast-item-moon:hover {
+    transform: scale(1.05); 
+}
+
+
+.forecast-day {
+    font-size: 25px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+
+.forecast-temp {
+    font-size:25px;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+    background-color: #101010;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    
+}
+footer h1 {
+    color: white;
+
+}
+.last {
+   margin-left:200px;
+    margin-right:200px;
+    margin-top: 50px; 
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+ .logo {
+    width: 100px;
+    height: 100px;
+ }
+.icons {
+       position: absolute;
+    width: 150px;
+    display: flex;
+    gap: 40px;
+     margin-top: 40px;
+     right: 50%;
+     bottom: -20%;
+}
+
+.text p {
+    color: white;
+    width: 200px;
+    text-align: center;
+     
+}
+.moon img {
+    width: 200px;
+    height: 200px;
+    animation: rotateImage 5s infinite linear;
+    
+  }
+
+  
+  @keyframes rotateImage {
+    from {
+      transform: rotate(0deg); 
+    }
+    to {
+      transform: rotate(360deg); 
+    }
+
+  }
+

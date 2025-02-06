@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96AcIANmNgwB5NULa_D5NWcLqhfA74C1syg&s" alt="">
+      </a>
+    <h1>Weather & Moon</h1>
+      <div class="weather">
+      
+        <form onsubmit="updateWeather(event)">
+          <input type="text" id="cityInput" placeholder="Enter city">
+          <button type="button" onclick="handleClick()">Search</button>
+      </form>
+    
+       </header>
+       <div class="main-container">
+        <main>
+          <div class="calendar">
+           <table>
+ 
+            
+      <tr>
+        <th>Пн</th>
+        <th>Вт</th>
+        <th>Ср</th>
+        <th>Чт</th>
+        <th>Пт</th>
+        <th>Сб</th>
+        <th>Вс</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+      </tr>
+      <tr>
+        <td>27</td>
+        <td>28</td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+        <td class="empty"></td>
+      </tr>
+   
+      
+  </table>
+
+          </div>
+          <div class="moon-image" id="moon">
+            
+        </main>
+       </div>
+    </div>
+    <script src="moon.js"></script>
+</body>
+</html>

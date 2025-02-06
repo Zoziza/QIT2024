@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+          <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96AcIANmNgwB5NULa_D5NWcLqhfA74C1syg&s" alt="">
+      </a>
+    
+      <h1>Weather & Moon</h1>
+      <div class="weather">
+      
+        <form onsubmit="updateWeather(event)">
+          <input type="text" id="cityInput" placeholder="Enter city">
+          <button type="button" onclick="handleClick()">Search</button> 
+      </form>
+     
+      </div>
+       </header>
+
+    
+        
+     <div class="main-container">
+      <main>
+        <div class="weather-container">
+          <section id="weatherSection">
+            <img id="weatherIcon" src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+            <div class="weather-details">
+              <h2 id="cityName">City Name</h2>  
+              <p id="description">Weather Description</p>  
+              <p id="temperature">Temperature: 0°C</p>
+              <p id="humidity">Humidity: 0%</p>  
+              <p id="windSpeed">Wind Speed: 0 km/h</p> 
+            </div>
+          </section>
+          <section class="forecast">
+            <h2>Weather Weekly Forecast</h2>
+            <div class="forecast">
+              <div class="forecast-item" id="monday">
+                <p class="forecast-day">Monday</p>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+                <p class="forecast-temp">0°C</p>
+              </div>
+              <div class="forecast-item" id="tuesday">
+                <p class="forecast-day">Tuesday</p>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+                <p class="forecast-temp">0°C</p>
+              </div>
+              <div class="forecast-item" id="wednesday">
+                <p class="forecast-day">Wednesday</p>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+                <p class="forecast-temp">0°C</p>
+              </div>
+              <div class="forecast-item" id="thursday">
+                <p class="forecast-day">Thursday</p>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+                <p class="forecast-temp">0°C</p>
+              </div>
+              <div class="forecast-item" id="friday">
+                <p class="forecast-day">Friday</p>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/743/930/small/sun-or-brightness-icon-png.png" alt="Weather Icon" class="weather-icon">
+                <p class="forecast-temp">0°C</p>
+              </div>
+            </div>
+          </section>
+  
+      
+        </div>
+        <section class="moon-phases">
+         <a href="moon.html"><h2>Moon Phases</h2></a> 
+          <div class="forecast">
+              <div class="forecast-item-moon">
+                  <p class="forecast-day">New Moon</p>
+                  <img src="https://pngimg.com/d/moon_PNG16.png" alt="New Moon" class="weather-icon">
+                  <p class="forecast-temp">0%</p>
+              </div>
+              <div class="forecast-item-moon">
+                  <p class="forecast-day">First Quarter</p>
+                  <img src="https://static.vecteezy.com/system/resources/thumbnails/008/541/930/small_2x/first-quarter-moon-seen-with-telescope-transparent-png.png" alt="First Quarter Moon" class="weather-icon">
+                  <p class="forecast-temp">50%</p>
+              </div>
+              <div class="forecast-item-moon">
+                  <p class="forecast-day">Full Moon</p>
+                  <img src="https://cdn.britannica.com/96/208796-050-47869FC7/full-moon.jpg" alt="Full Moon" class="weather-icon">
+                  <p class="forecast-temp">100%</p>
+              </div>
+              <div class="forecast-item-moon">
+                  <p class="forecast-day">Last Quarter</p>
+                  <img src="https://moonsuncalendar.com/img/m512/270.png" alt="Last Quarter Moon" class="weather-icon">
+                  <p class="forecast-temp">50%</p>
+              </div>
+              <div class="forecast-item-moon">
+                  <p class="forecast-day">Waning Crescent</p>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmY_aOHgIO5XC5Ri5JnKKQAeH2X1l9y_1nOw&s" alt="Waning Crescent Moon" class="weather-icon">
+                  <p class="forecast-temp">20%</p>
+              </div>
+              <div class="moon">
+          <img src="https://www.freeiconspng.com/thumbs/moon-png/full-moon-png-6.png" alt="">
+        </div>
+
+          </div>
+      </section>
+        
+      </main>
+    </div>
+     <footer>
+      <div class="last">
+        <div class="logo"><svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css">  .st0{fill:#ffffff;}  </style> <g> <path class="st0" d="M212.969,278.609c15.938-44.594,56.344-76.75,103.688-82.141c-15.469-44.016-57.375-75.5-106.656-75.5 c-62.438,0-113.109,50.594-113.109,113.047c0,29.781,11.531,56.859,30.375,77.078c21.672-20.156,50.734-32.547,82.672-32.547 C210.938,278.547,211.906,278.609,212.969,278.609z"></path> <rect x="193.516" y="24.047" class="st0" width="32.938" height="63.406"></rect> <polygon class="st0" points="117.984,118.734 73.156,73.906 49.859,97.188 94.688,142.031 "></polygon> <rect y="217.563" class="st0" width="63.406" height="32.938"></rect> <path class="st0" d="M49.859,370.844l23.266,23.328l17.578-17.594c2.766-14.109,7.969-27.344,15.219-39.266l-11.266-11.266 L49.859,370.844z"></path> <polygon class="st0" points="370.125,97.188 346.813,73.891 302,118.734 325.281,142.031 "></polygon> <path class="st0" d="M422.578,304.344c-9.234-42.828-47.281-74.922-92.859-74.922c-46.063,0-84.438,32.75-93.156,76.25 c-5.156-0.891-10.438-1.453-15.844-1.453c-50.75,0-91.875,41.125-91.875,91.859c0,50.75,41.125,91.875,91.875,91.875 c43.359,0,156.75,0,199.406,0c50.75,0,91.875-41.125,91.875-91.875C512,346.156,472.188,305.641,422.578,304.344z"></path> </g> </g></svg></div>
+<h1>Our contacts:</h1>
+      <div class="icons">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill="#fcfcfc"></path> </g></svg>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#ffffff"></path> <path d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" fill="#ffffff"></path> </g></svg>
+     <svg fill="#ffffff" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1643.825 518.606c-14.457 11.294-22.588 28.8-21.685 47.096.565 16.377 1.017 32.753 1.017 49.355 0 530.372-373.497 1079.153-998.513 1079.153-122.203 0-242.598-24.282-355.765-71.153 136.433-22.588 266.428-82.447 374.965-173.816 17.957-15.247 24.62-39.868 16.828-62.005-7.793-22.136-28.574-37.157-52.179-37.722-105.374-2.146-200.81-62.682-256.376-157.214 38.06-1.13 79.059-7.116 109.779-16.038 24.847-7.228 41.562-30.381 40.771-56.132-.903-25.863-19.2-47.774-44.499-53.308-112.15-24.282-194.71-116.781-222.607-243.84 32.076 6.438 62.344 8.47 79.06 8.922 24.62 2.711 47.322-14.456 55.453-38.06 8.02-23.492-.226-49.582-20.442-64.151-78.042-56.245-161.619-161.167-161.619-286.42 0-30.832 3.84-61.326 11.181-90.804 195.163 217.186 461.478 348.31 743.83 363.558 18.975 1.016 34.674-6.438 46.08-19.765 11.408-13.327 15.926-31.398 12.312-48.565-5.648-25.637-8.471-52.178-8.471-79.058 0-188.951 141.063-342.664 314.428-342.664 87.19 0 168.283 37.835 228.141 106.73 13.327 15.36 34.334 22.475 54.212 18.183 28.687-6.099 56.922-13.779 84.706-23.153-16.49 16.715-34.673 31.624-54.438 44.386-22.25 14.343-31.51 42.014-22.475 66.861s34.56 39.868 60.31 36.593c14.683-1.92 29.252-4.179 43.709-7.002-18.297 17.731-37.497 34.447-57.713 50.033m261.685-199.68c-16.716-18.636-43.596-23.83-66.41-13.214-4.066 1.92-8.132 3.84-12.31 5.76 17.054-30.269 30.946-62.683 40.997-96.678 6.777-22.588-1.242-46.984-20.103-61.214-18.974-14.118-44.5-15.247-64.49-2.485-58.277 37.384-120.96 64.828-186.466 82.108-78.268-76.8-181.948-120.17-289.355-120.17-235.595 0-427.37 204.424-427.37 455.606 0 9.487.227 18.974.791 28.348C626 564.008 390.517 424.977 226.64 208.469c-11.52-15.247-30.155-23.04-49.242-22.136-19.2 1.468-36.367 12.536-45.516 29.477-37.157 68.894-56.809 147.614-56.809 227.464 0 86.626 28.687 165.007 70.25 230.739-19.426 9.035-32.98 28.574-32.98 51.388v5.195c0 139.821 49.808 261.91 133.497 344.47-9.035 2.937-17.28 8.246-23.943 15.36a56.566 56.566 0 0 0-12.537 54.326c40.772 136.997 137.788 242.145 258.41 289.807-122.88 69.571-268.688 97.129-404.443 80.753-26.541-3.953-50.485 11.858-59.633 36.028-9.261 24.282-.677 51.84 20.781 66.522 179.69 123.784 387.276 189.29 600.17 189.29 695.717 0 1111.454-606.156 1111.454-1192.095 0-8.583-.113-17.054-.339-25.524 68.555-57.149 127.51-125.365 175.737-203.069 13.214-21.345 10.842-48.903-5.986-67.538" fill-rule="evenodd"></path> </g></svg>
+    </div>
+    <div class="text">
+      <h1>Our company:</h1>
+      <p>We are not responsible for being blown away by the wind!</p>
+    </div>
+      
+      </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
